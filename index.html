@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mousumi Akter — Teacher, UI/UX Designer, Vibe Coder</title>
+    <meta
+      name="description"
+      content="Mousumi Akter is a teacher, UI/UX designer, and vibe coder based in Dhaka. Computer engineer from North South University."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <canvas class="page-canvas" aria-hidden="true"></canvas>
+
+    <aside class="sidebar" id="sidebar">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="#intro">Mousumi Akter</a>
+        <ul class="nav__menu" id="nav-menu">
+          <li>
+            <a href="#intro" data-nav-link>Intro</a>
+          </li>
+          <li>
+            <a href="#about" data-nav-link>About</a>
+          </li>
+          <li>
+            <a href="#experience" data-nav-link>Experience</a>
+          </li>
+          <li>
+            <a href="#work" data-nav-link>Work</a>
+          </li>
+          <li>
+            <a href="#skills" data-nav-link>Skills</a>
+          </li>
+          <li>
+            <a href="#education" data-nav-link>Education</a>
+          </li>
+          <li>
+            <a href="#contact" data-nav-link>Contact</a>
+          </li>
+        </ul>
+        <div class="nav__footer">
+          <ul class="socials socials--nav" aria-label="Social profiles">
+            <li>
+              <a
+                class="socials__link socials__link--linkedin"
+                href="https://www.linkedin.com/in/mousumi-akter-87a638221"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg class="socials__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="socials__link socials__link--youtube"
+                href="https://youtube.com/@ramisaborshon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <svg class="socials__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.55 12 3.55 12 3.55s-7.54 0-9.38.5A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.84.5 9.38.5 9.38.5s7.54 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.75 15.57V8.43L15.82 12l-6.07 3.57z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="socials__link socials__link--instagram"
+                href="https://www.instagram.com/ramisas_wings"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="socials__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <defs>
+                    <linearGradient id="ig-grad-nav" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#f58529" />
+                      <stop offset="50%" stop-color="#dd2a7b" />
+                      <stop offset="100%" stop-color="#515bd4" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0-2.16C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.69 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="nav__meta">Dhaka, Bangladesh</p>
+        </div>
+      </nav>
+    </aside>
+
+    <button
+      class="nav__toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="sidebar"
+      aria-label="Open menu"
+    >
+      <span class="nav__toggle-bar" aria-hidden="true"></span>
+      <span class="nav__toggle-bar" aria-hidden="true"></span>
+    </button>
+    <div class="nav-backdrop" hidden></div>
+
+    <div class="site-shell">
+      <main id="main">
+        <section class="hero" id="intro" aria-label="Introduction">
+        <div class="hero__layout">
+          <div class="hero__content">
+            <p class="hero__eyebrow">Dhaka, Bangladesh</p>
+            <h1 class="hero__name">Mousumi Akter</h1>
+            <p class="hero__roles">Teacher · UI/UX Designer · Vibe Coder</p>
+            <p class="hero__lede">
+              Computer engineer and classroom educator who shapes clear learning
+              experiences and builds with care.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Get in touch</a>
+              <a class="btn btn--ghost" href="#about">Learn more</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img
+              class="hero__photo"
+              src="assets/mousumi.jpg"
+              alt="Portrait of Mousumi Akter"
+              width="627"
+              height="727"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section about reveal" id="about">
+        <div class="section__inner">
+          <p class="section__label">About</p>
+          <h2 class="section__title">Teaching with clarity, designing with empathy</h2>
+          <div class="about__grid">
+            <p class="about__lead">
+              Mousumi is a computer engineer from North South University (BSc
+              CSE, 2020) and a working teacher in Dhaka. She currently teaches
+              O Level Computer Science at Wisdom Academy, alongside earlier
+              classroom work in mathematics and science. She brings patient
+              communication, empathic listening, and a practical sense of
+              structure to the classroom — and to how she thinks about interfaces
+              and small digital products.
+            </p>
+            <div class="about__aside">
+              <p>
+                Away from school, she gardens, reads Humayun Ahmed and Dan Brown,
+                and runs
+                <strong>Avocado Lifestyle BD</strong>, a Facebook page promoting
+                traditional products of Bangladesh.
+              </p>
+              <p>
+                She works comfortably in English and colloquial Bengali, with a
+                growing command of Spanish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience reveal" id="experience">
+        <div class="section__inner">
+          <p class="section__label">Experience</p>
+          <h2 class="section__title">In the classroom</h2>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <time datetime="2024">2024</time>
+                <span aria-hidden="true">—</span>
+                <span>Present</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Computer Faculty — O Level</h3>
+                <p class="timeline__place">
+                  Wisdom Academy · Computer Science · Bashundhara R/A, Dhaka
+                </p>
+                <p class="timeline__note">
+                  Teaching O Level Computer Science with clear concepts and
+                  practical problem-solving. Also runs the computer club,
+                  mentoring students in coding, design, and small digital
+                  projects.
+                </p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <time datetime="2022-07">Jul 2022</time>
+                <span aria-hidden="true">—</span>
+                <time datetime="2024">2024</time>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Science Faculty</h3>
+                <p class="timeline__place">
+                  Prime Bank Grammar School · Computer &amp; Science · Uttara, Dhaka
+                </p>
+                <p class="timeline__note">
+                  Taught Mathematics and Science to younger learners, building
+                  STEM foundations with clear explanations and a steady classroom
+                  presence.
+                </p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <time datetime="2021-07">Jul 2021</time>
+                <span aria-hidden="true">—</span>
+                <time datetime="2022-06">Jun 2022</time>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Class Teacher</h3>
+                <p class="timeline__place">
+                  Jahan International School · Mathematics &amp; Computer · Uttara, Dhaka
+                </p>
+                <p class="timeline__note">
+                  Guided day-to-day learning for Class IV, supporting families
+                  and keeping a structured, caring classroom environment.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section work reveal" id="work">
+        <div class="section__inner">
+          <p class="section__label">Work</p>
+          <h2 class="section__title">Selected project</h2>
+          <article class="project">
+            <p class="project__meta">Senior project · North South University</p>
+            <h3 class="project__name">Hermes Might</h3>
+            <p class="project__desc">
+              A web and mobile application for playground facilities — coursework
+              under Dr. Sazzad Hossain, Professor &amp; Ex-Chairman, ECE, North
+              South University (courses 499A / 499B). The project sits at the
+              intersection of product thinking, interface clarity, and practical
+              build craft that continues to inform how Mousumi approaches UI/UX
+              and vibe coding alongside teaching.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills reveal" id="skills">
+        <div class="section__inner">
+          <p class="section__label">Skills</p>
+          <h2 class="section__title">Tools and languages</h2>
+          <div class="skills__groups">
+            <div class="skills__group">
+              <h3 class="skills__heading">Practice</h3>
+              <ul class="skills__list">
+                <li>HTML &amp; CSS</li>
+                <li>Figma</li>
+                <li>Cursor</li>
+                <li>Gamma</li>
+                <li>SEO</li>
+                <li>Facebook &amp; Instagram marketing</li>
+                <li>Microsoft Word, Excel, PowerPoint</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3 class="skills__heading">Languages</h3>
+              <ul class="skills__list">
+                <li>English</li>
+                <li>Bengali</li>
+                <li>Spanish</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3 class="skills__heading">Strengths</h3>
+              <ul class="skills__list">
+                <li>Empathic listening</li>
+                <li>Public &amp; team communication</li>
+                <li>Persuasive speaking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education reveal" id="education">
+        <div class="section__inner">
+          <p class="section__label">Education</p>
+          <h2 class="section__title">Academic path</h2>
+          <ul class="edu-list">
+            <li>
+              <span class="edu-list__year">2020</span>
+              <div>
+                <p class="edu-list__degree">BSc in Computer Science &amp; Engineering</p>
+                <p class="edu-list__school">North South University</p>
+              </div>
+            </li>
+            <li>
+              <span class="edu-list__year">2013</span>
+              <div>
+                <p class="edu-list__degree">Higher Secondary Certificate (HSC)</p>
+                <p class="edu-list__school">Lalmatia Mohila College</p>
+              </div>
+            </li>
+            <li>
+              <span class="edu-list__year">2011</span>
+              <div>
+                <p class="edu-list__degree">Secondary School Certificate (SSC)</p>
+                <p class="edu-list__school">Shibalaya Govt. High School</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contact">
+        <div class="section__inner">
+          <p class="section__label">Contact</p>
+          <h2 class="section__title">Let’s talk</h2>
+          <p class="contact__lede">
+            Open to teaching conversations, design collaboration, and small
+            builds.
+          </p>
+          <address class="contact__details">
+            <a href="mailto:ramisa.anan.14@gmail.com">ramisa.anan.14@gmail.com</a>
+            <a href="tel:+8801762242838">01762242838</a>
+            <span>Bashundhara R/A, Dhaka</span>
+          </address>
+          <ul class="socials socials--contact" aria-label="Social profiles">
+            <li>
+              <a
+                class="socials__link socials__link--linkedin"
+                href="https://www.linkedin.com/in/mousumi-akter-87a638221"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg class="socials__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="socials__link socials__link--youtube"
+                href="https://youtube.com/@ramisaborshon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <svg class="socials__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.55 12 3.55 12 3.55s-7.54 0-9.38.5A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.84.5 9.38.5 9.38.5s7.54 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.75 15.57V8.43L15.82 12l-6.07 3.57z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="socials__link socials__link--instagram"
+                href="https://www.instagram.com/ramisas_wings"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="socials__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <defs>
+                    <linearGradient id="ig-grad-contact" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#f58529" />
+                      <stop offset="50%" stop-color="#dd2a7b" />
+                      <stop offset="100%" stop-color="#515bd4" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0-2.16C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.69 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> Mousumi Akter</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
